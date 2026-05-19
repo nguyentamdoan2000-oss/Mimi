@@ -1,0 +1,35 @@
+<div class="reader-container">
+  <!-- Thanh điều khiển dễ thương -->
+  <div class="settings-bar">
+    <div class="setting-item">
+      <label>Cỡ chữ: </label>
+      <button onclick="changeFontSize(-2)">A-</button>
+      <span id="font-size-val">18px</span>
+      <button onclick="changeFontSize(2)">A+</button>
+    </div>
+
+    <div class="setting-item">
+      <label>Font chữ: </label>
+      <select id="font-family-select" onchange="changeFontFamily(this.value)">
+        <option value="'Lexend', sans-serif">Lexend (Tròn trịa, dễ thương)</option>
+        <option value="'Nunito', sans-serif">Nunito (Mềm mại)</option>
+        <option value="'Lora', serif">Lora (Chuẩn tiểu thuyết)</option>
+      </select>
+    </div>
+
+    <div class="setting-item">
+      <label>Màu nền: </label>
+      <div class="theme-options">
+        <span class="theme-dot original" onclick="changeTheme('#F0F8FF', '#2B2D42')" title="Xanh biển"></span>
+        <span class="theme-dot milk" onclick="changeTheme('#FFFDF6', '#4A3E3D')" title="Sữa ấm"></span>
+        <span class="theme-dot dark" onclick="changeTheme('#1A2238', '#EAEAEA')" title="Biển đêm"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nội dung truyện -->
+  <div id="story-content" class="story-text">
+    <p>Ngày xửa ngày xưa, ở một hòn đảo mang hình dáng một chiếc bánh pudding, có một chú cá voi xanh nhỏ rất thích đi thu thập những câu chuyện...</p>
+    <p>Mỗi lần đọc một trang sách hay, chú lại phun lên một cột nước lấp lánh bong bóng hình ngôi sao.</p>
+  </div>
+</div>
