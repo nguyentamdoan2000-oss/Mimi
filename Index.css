@@ -1,0 +1,72 @@
+/* Font chữ Google Fonts khuyên dùng: Lexend hoặc Nunito để nhìn thấy sự dễ thương */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&family=Nunito:wght@400;600&family=Lora&display=swap');
+
+body {
+  background-color: #E8F1F5;
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.reader-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Thanh cài đặt bo tròn như đám mây */
+.settings-bar {
+  background: #FFFFFF;
+  border: 3px solid #BDE0FE;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 8px 0 #BDE0FE; /* Đổ bóng kiểu hoạt hình cartoon */
+  margin-bottom: 30px;
+}
+
+.setting-item button {
+  background-color: #A2D2FF;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.setting-item button:active {
+  transform: scale(0.95);
+}
+
+/* Các nút chọn màu nền */
+.theme-options {
+  display: flex;
+  gap: 10px;
+}
+.theme-dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #DDD;
+}
+.theme-dot.original { background-color: #F0F8FF; }
+.theme-dot.milk { background-color: #FFFDF6; }
+.theme-dot.dark { background-color: #1A2238; }
+
+/* Khu vực hiển thị chữ chữ */
+.story-text {
+  background-color: #F0F8FF; /* Mặc định xanh biển nhẹ */
+  color: #2B2D42;
+  padding: 40px;
+  border-radius: 24px;
+  line-height: 1.8;
+  font-size: 18px;
+  border: 3px solid #BDE0FE;
+  box-shadow: 0 10px 0 #BDE0FE;
+}
